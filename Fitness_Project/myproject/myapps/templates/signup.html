@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Planner</title>
+    {%load static%}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class=" "form-title">Register</h1>
+        <form method="post" action = "">
+            <div class="input-group">
+                <i class = "fas fa-user"></i>
+                <label for = "fname"> </label>
+                <input type = "text" name = "Firstname" id = "fName" placeholder="Firstname" required>
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-user"></i>
+                <label for = "lname"> </label>
+                <input type = "text" name = "Lastname" id = "lName" placeholder="Lastname" required>
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-envelope"></i>
+                <label for = "Email"> </label>
+                <input type = "email" name = "Email" id = "mail" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-lock"></i>
+                <label for = "password"> </label>
+                <input type = "password" name = "password" id = "email" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-user"></i>
+                <label for = "cfpassword"> </label>
+                <input type = "password" name = "cfpassword" id = "cf_password" placeholder="Confirm your password" required>
+                
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-user"></i>
+                <label for = "phone_number"> </label>
+                <input type = "number" name = "phone_number" id = "phone" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+                <i class = "fas fa-dateofbirth"></i>
+                <label for = "DateOfBirth"> Date Of Birth</label><br>  
+                <input type = "date" name = "dob" id = "DateOfBirth" placeholder="Enter" required>
+            </div>
+            <div class="input-group">
+                <label for="checkbox1">Terms & service</label>
+                <input type="checkbox" id="checkbox1" name="Tos" value="1"><br>
+                <label for="checkbox2">Receive incoming letter</label>
+                <input type="checkbox" id="checkbox2" name="RIL" value="1"><br>
+                <input type="submit" class="btn" value="Sign Up" name="signUp">
+            </form>
+            <p class="or">
+                    or
+            </p>
+            <div class="icons">
+
+            </div>
+            <div class="links">
+              <p>Already Have Account ?</p>
+              <a href="/signin">
+                <button type="button">Sign in</button>
+            </a>
+            
+              
+            </div>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

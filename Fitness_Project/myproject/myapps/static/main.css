@@ -1,0 +1,281 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main content */
+main {
+    padding: 40px 10%;
+    background-color: #fff;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.intro .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.intro .btn:hover {
+    background-color: #e65b4c;
+}
+
+/* Workouts Section */
+.workouts {
+    margin-bottom: 50px;
+}
+
+.workouts h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.workout-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.workout {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.workout h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.workout p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.workout .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.workout .btn:hover {
+    background-color: #45a049;
+}
+
+/* Nutrition Section */
+.nutrition {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nutrition h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nutrition p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.nutrition .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nutrition .btn:hover {
+    background-color: #e65b4c;
+}
+
+/* Create Workout Section */
+.create-workout {
+    background-color: #f9f9f9;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.create-workout h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.create-workout form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-workout label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.create-workout input[type="text"],
+.create-workout input[type="date"],
+.create-workout textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.create-workout textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.create-workout .btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+.create-workout .btn:hover {
+    background-color: #e65b4c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-links li {
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-links li a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .workout-list {
+        flex-direction: column;
+    }
+
+    .workout {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    main {
+        padding: 40px 5%;
+    }
+}
